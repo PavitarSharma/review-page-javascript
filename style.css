@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: rgb(8, 244, 248);
+    border-radius: 50%;
+}
+
+.title {
+    margin-top: 10rem;
+    position: relative;
+}
+
+.title::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    border-radius: 4px;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(8, 244, 248);
+}
+
+.img-container #person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.img-container::after {
+    /* font-family: "Font Awesome 5 Free"; */
+    font-family: FontAwesome;
+    content: "\f10e";
+    width: 2.5rem;
+    height: 2.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(25%);
+    background: rgb(8, 244, 248);
+    color: #fff;
+    display: grid;
+    place-content: center;
+
+}
+/* 
+.img-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(8, 244, 248);
+    position: absolute;
+    top: -0.25rem;
+    right: -0.5rem;
+    border-radius: 50%;
+
+  } */
+
+
+
+.random {
+    padding: 0.5rem;
+    background: rgb(183, 245, 250);
+}
